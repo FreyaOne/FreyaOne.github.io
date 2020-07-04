@@ -1,0 +1,186 @@
+
+<!DOCTYPE html>
+<html lang="en" class="loading">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>弹性布局 - Hexo</title>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="google" content="notranslate" />
+    <meta name="keywords" content="Fechin,"> 
+    <meta name="description" content="弹性布局1. 弹性容器：设置display:flex;即为弹性布局2. 弹性子元素：父元素设置为弹性布局，则直接子元素遵循弹性布局，间接子元素不遵循不设置弹性布局时，三个div是竖着排列，而为弹性布,"> 
+    <meta name="author" content="John Doe"> 
+    <link rel="alternative" href="atom.xml" title="Hexo" type="application/atom+xml"> 
+    <link rel="icon" href="/img/cion.png"> 
+    
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+
+    
+<link rel="stylesheet" href="/css/diaspora.css">
+
+	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({
+              google_ad_client: "ca-pub-8691406134231910",
+              enable_page_level_ads: true
+         });
+    </script>
+    <script async custom-element="amp-auto-ads"
+        src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
+    </script>
+</head>
+
+<body class="loading">
+    <span id="config-title" style="display:none">Hexo</span>
+    <div id="loader"></div>
+    <div id="single">
+    <div id="top" style="display: block;">
+    <div class="bar" style="width: 0;"></div>
+    <a class="iconfont icon-home image-icon" href="javascript:;" data-url="http://yoursite.com"></a>
+    <div title="播放/暂停" class="iconfont icon-play"></div>
+    <h3 class="subtitle">弹性布局</h3>
+    <div class="social">
+        <div>
+            <div class="share">
+                <a title="获取二维码" class="iconfont icon-scan" href="javascript:;"></a>
+            </div>
+            <div id="qr"></div>
+        </div>
+    </div>
+    <div class="scrollbar"></div>
+</div>
+
+    <div class="section">
+        <div class="article">
+    <div class='main'>
+        <h1 class="title">弹性布局</h1>
+        <div class="stuff">
+            <span>六月 21, 2020</span>
+            
+
+        </div>
+        <div class="content markdown">
+            <h3 id="弹性布局"><a href="#弹性布局" class="headerlink" title="弹性布局"></a>弹性布局</h3><h4 id="1-弹性容器：设置display-flex-即为弹性布局"><a href="#1-弹性容器：设置display-flex-即为弹性布局" class="headerlink" title="1. 弹性容器：设置display:flex;即为弹性布局"></a>1. 弹性容器：设置<code>display:flex;</code>即为弹性布局</h4><h4 id="2-弹性子元素：父元素设置为弹性布局，则直接子元素遵循弹性布局，间接子元素不遵循"><a href="#2-弹性子元素：父元素设置为弹性布局，则直接子元素遵循弹性布局，间接子元素不遵循" class="headerlink" title="2. 弹性子元素：父元素设置为弹性布局，则直接子元素遵循弹性布局，间接子元素不遵循"></a>2. 弹性子元素：父元素设置为弹性布局，则直接子元素遵循弹性布局，间接子元素不遵循</h4><p>不设置弹性布局时，三个div是竖着排列，而为弹性布局时，为横着排列</p>
+<h4 id="3-弹性主轴方向：默认是flex-direction-row从左到右，可设置为column从上到下，row-reverse从右到左，column-reverse从下到上。"><a href="#3-弹性主轴方向：默认是flex-direction-row从左到右，可设置为column从上到下，row-reverse从右到左，column-reverse从下到上。" class="headerlink" title="3. 弹性主轴方向：默认是flex-direction:row从左到右，可设置为column从上到下，row-reverse从右到左，column-reverse从下到上。"></a>3. 弹性主轴方向：默认是<code>flex-direction:row</code>从左到右，可设置为column从上到下，row-reverse从右到左，column-reverse从下到上。</h4><p>如果出现多个div超出父元素边界，则子div会按比例压缩，不会换行</p>
+<h4 id="4-设置主轴方向内容分布：justify-content-flex-start-默认值-从主轴的左端开始"><a href="#4-设置主轴方向内容分布：justify-content-flex-start-默认值-从主轴的左端开始" class="headerlink" title="4. 设置主轴方向内容分布：justify-content:flex-start(默认值)从主轴的左端开始"></a>4. 设置主轴方向内容分布：<code>justify-content:flex-start(默认值)</code>从主轴的左端开始</h4><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">display</span><span class="selector-pseudo">:flex</span>;</span><br><span class="line"><span class="selector-tag">flex-direction</span><span class="selector-pseudo">:row</span>;</span><br><span class="line"><span class="selector-tag">justify-content</span><span class="selector-pseudo">:flex-start</span>;</span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">	flex-start:向主轴方向靠拢</span></span><br><span class="line"><span class="comment">	center:向主轴中心方向靠拢</span></span><br><span class="line"><span class="comment">	flex-end:向主轴结束方向靠拢</span></span><br><span class="line"><span class="comment">	space-around:平均分布(两边有间距，间距为中间间距的一半)</span></span><br><span class="line"><span class="comment">	space-between:平均分布(两边无间距)</span></span><br><span class="line"><span class="comment">	space-evenly(新):平均分布（两边有间距，间距和中间一样）</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="5-设置侧轴内容分布：-align-items-stretch默认值为拉伸效果（子元素未设置高的属性，设置高则无效）"><a href="#5-设置侧轴内容分布：-align-items-stretch默认值为拉伸效果（子元素未设置高的属性，设置高则无效）" class="headerlink" title="5. 设置侧轴内容分布： align-items:stretch默认值为拉伸效果（子元素未设置高的属性，设置高则无效）"></a>5. 设置侧轴内容分布： <code>align-items:stretch</code>默认值为拉伸效果（子元素未设置高的属性，设置高则无效）</h4><h4 id="6-弹性换行：flex-wrap-nowrap-默认不换行"><a href="#6-弹性换行：flex-wrap-nowrap-默认不换行" class="headerlink" title="6.弹性换行：flex-wrap:nowrap(默认不换行)"></a>6.弹性换行：<code>flex-wrap:nowrap(默认不换行)</code></h4><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">	wrap:换行</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="selector-tag">flex-wrap</span><span class="selector-pseudo">:nowrap</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">	设置多行内容分布</span></span><br><span class="line"><span class="comment">	flex-start</span></span><br><span class="line"><span class="comment">	flex-end</span></span><br><span class="line"><span class="comment">	center</span></span><br><span class="line"><span class="comment">	space-between</span></span><br><span class="line"><span class="comment">	space-around</span></span><br><span class="line"><span class="comment">	</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="selector-tag">align-content</span><span class="selector-pseudo">:flex-start</span>;</span><br></pre></td></tr></table></figure>
+
+<h4 id="7-设置-子元素-排列顺序：order：1-2，3，4-数值越小，越往前"><a href="#7-设置-子元素-排列顺序：order：1-2，3，4-数值越小，越往前" class="headerlink" title="7. 设置==子元素==排列顺序：order：1(2，3，4)数值越小，越往前"></a>7. 设置==子元素==排列顺序：<code>order：1(2，3，4)</code>数值越小，越往前</h4><h4 id="8-单独设置子元素侧轴排布：align-self-center"><a href="#8-单独设置子元素侧轴排布：align-self-center" class="headerlink" title="8. 单独设置子元素侧轴排布：align-self:center"></a>8. 单独设置子元素侧轴排布：<code>align-self:center</code></h4>
+            <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
+            <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="false">
+                <source type="audio/mpeg" src="">
+            </audio>
+            
+                <ul id="audio-list" style="display:none">
+                    
+                        
+                            <li title='0' data-url='http://link.hhtjim.com/163/425570952.mp3'></li>
+                        
+                    
+                        
+                            <li title='1' data-url='http://link.hhtjim.com/163/425570952.mp3'></li>
+                        
+                    
+                </ul>
+            
+        </div>
+        
+    <div id='gitalk-container' class="comment link"
+		data-enable='true'
+        data-ae='false'
+        data-ci=''
+        data-cs=''
+        data-r=''
+        data-o=''
+        data-a=''
+        data-d='false'
+    >查看评论</div>
+
+
+    </div>
+    
+        <div class='side'>
+			<ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#弹性布局"><span class="toc-number">1.</span> <span class="toc-text">弹性布局</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-弹性容器：设置display-flex-即为弹性布局"><span class="toc-number">1.1.</span> <span class="toc-text">1. 弹性容器：设置display:flex;即为弹性布局</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-弹性子元素：父元素设置为弹性布局，则直接子元素遵循弹性布局，间接子元素不遵循"><span class="toc-number">1.2.</span> <span class="toc-text">2. 弹性子元素：父元素设置为弹性布局，则直接子元素遵循弹性布局，间接子元素不遵循</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-弹性主轴方向：默认是flex-direction-row从左到右，可设置为column从上到下，row-reverse从右到左，column-reverse从下到上。"><span class="toc-number">1.3.</span> <span class="toc-text">3. 弹性主轴方向：默认是flex-direction:row从左到右，可设置为column从上到下，row-reverse从右到左，column-reverse从下到上。</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-设置主轴方向内容分布：justify-content-flex-start-默认值-从主轴的左端开始"><span class="toc-number">1.4.</span> <span class="toc-text">4. 设置主轴方向内容分布：justify-content:flex-start(默认值)从主轴的左端开始</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-设置侧轴内容分布：-align-items-stretch默认值为拉伸效果（子元素未设置高的属性，设置高则无效）"><span class="toc-number">1.5.</span> <span class="toc-text">5. 设置侧轴内容分布： align-items:stretch默认值为拉伸效果（子元素未设置高的属性，设置高则无效）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#6-弹性换行：flex-wrap-nowrap-默认不换行"><span class="toc-number">1.6.</span> <span class="toc-text">6.弹性换行：flex-wrap:nowrap(默认不换行)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#7-设置-子元素-排列顺序：order：1-2，3，4-数值越小，越往前"><span class="toc-number">1.7.</span> <span class="toc-text">7. 设置&#x3D;&#x3D;子元素&#x3D;&#x3D;排列顺序：order：1(2，3，4)数值越小，越往前</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#8-单独设置子元素侧轴排布：align-self-center"><span class="toc-number">1.8.</span> <span class="toc-text">8. 单独设置子元素侧轴排布：align-self:center</span></a></li></ol></li></ol>	
+        </div>
+    
+</div>
+
+
+    </div>
+</div>
+</body>
+
+<script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+
+
+<script src="//lib.baomitu.com/jquery/1.8.3/jquery.min.js"></script>
+<script src="/js/plugin.js"></script>
+<script src="/js/typed.js"></script>
+<script src="/js/diaspora.js"></script>
+
+
+<link rel="stylesheet" href="/photoswipe/photoswipe.css">
+<link rel="stylesheet" href="/photoswipe/default-skin/default-skin.css">
+
+
+<script src="/photoswipe/photoswipe.min.js"></script>
+<script src="/photoswipe/photoswipe-ui-default.min.js"></script>
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <!--  Controls are self-explanatory. Order can be changed. -->
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+</html>

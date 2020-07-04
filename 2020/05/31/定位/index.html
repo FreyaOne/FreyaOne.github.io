@@ -5,12 +5,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Hello World - Hexo</title>
+    <title>定位 - Hexo</title>
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="google" content="notranslate" />
     <meta name="keywords" content="Fechin,"> 
-    <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any pr,"> 
+    <meta name="description" content="绝对定位12345position:fixedheight:width:left(right):top(bottom):
+
+脱离原本的文档流，不占空间
+相对定位12345position:relat,"> 
     <meta name="author" content="John Doe"> 
     <link rel="alternative" href="atom.xml" title="Hexo" type="application/atom+xml"> 
     <link rel="icon" href="/img/cion.png"> 
@@ -40,7 +43,7 @@
     <div class="bar" style="width: 0;"></div>
     <a class="iconfont icon-home image-icon" href="javascript:;" data-url="http://yoursite.com"></a>
     <div title="播放/暂停" class="iconfont icon-play"></div>
-    <h3 class="subtitle">Hello World</h3>
+    <h3 class="subtitle">定位</h3>
     <div class="social">
         <div>
             <div class="share">
@@ -55,26 +58,25 @@
     <div class="section">
         <div class="article">
     <div class='main'>
-        <h1 class="title">Hello World</h1>
+        <h1 class="title">定位</h1>
         <div class="stuff">
-            <span>六月 20, 2020</span>
+            <span>五月 31, 2020</span>
             
 
         </div>
         <div class="content markdown">
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+            <h3 id="绝对定位"><a href="#绝对定位" class="headerlink" title="绝对定位"></a>绝对定位</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">position</span><span class="selector-pseudo">:fixed</span></span><br><span class="line"><span class="selector-tag">height</span>:</span><br><span class="line"><span class="selector-tag">width</span>:</span><br><span class="line"><span class="selector-tag">left</span>(<span class="selector-tag">right</span>):</span><br><span class="line"><span class="selector-tag">top</span>(<span class="selector-tag">bottom</span>):</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>脱离原本的文档流，不占空间</p>
+<h3 id="相对定位"><a href="#相对定位" class="headerlink" title="相对定位"></a>相对定位</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">position:relative; //相对于自己的定位</span><br><span class="line"><span class="selector-tag">height</span>:</span><br><span class="line"><span class="selector-tag">width</span>:</span><br><span class="line"><span class="selector-tag">left</span>(<span class="selector-tag">right</span>):</span><br><span class="line"><span class="selector-tag">top</span>(<span class="selector-tag">bottom</span>):</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>不会脱离原来的文档流（占空间），只是不会出现在原来的位置上，会移动</p>
+<h3 id="绝对定位-1"><a href="#绝对定位-1" class="headerlink" title="绝对定位"></a>绝对定位</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">position</span><span class="selector-pseudo">:absolute</span>;</span><br><span class="line"><span class="selector-tag">height</span>:</span><br><span class="line"><span class="selector-tag">width</span>:</span><br><span class="line"><span class="selector-tag">left</span>(<span class="selector-tag">right</span>):</span><br><span class="line"><span class="selector-tag">top</span>(<span class="selector-tag">bottom</span>):</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>相对于父级元素或祖先元素的位置进行定位，会脱离文档流(不占空间)，但前提是父级元素必须有定位，一般使用相对定位，不会移动本身的位置。</p>
+<h3 id="粘性定位"><a href="#粘性定位" class="headerlink" title="粘性定位"></a>粘性定位</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">position</span>：<span class="selector-tag">sticky</span></span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+<p>会固定在某个位置，但是不脱离文档流</p>
 
             <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
             <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="false">
@@ -110,7 +112,7 @@
     </div>
     
         <div class='side'>
-			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Quick-Start"><span class="toc-number">1.</span> <span class="toc-text">Quick Start</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Create-a-new-post"><span class="toc-number">1.1.</span> <span class="toc-text">Create a new post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Run-server"><span class="toc-number">1.2.</span> <span class="toc-text">Run server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Generate-static-files"><span class="toc-number">1.3.</span> <span class="toc-text">Generate static files</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy-to-remote-sites"><span class="toc-number">1.4.</span> <span class="toc-text">Deploy to remote sites</span></a></li></ol></li></ol>	
+			<ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#绝对定位"><span class="toc-number">1.</span> <span class="toc-text">绝对定位</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#相对定位"><span class="toc-number">2.</span> <span class="toc-text">相对定位</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#绝对定位-1"><span class="toc-number">3.</span> <span class="toc-text">绝对定位</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#粘性定位"><span class="toc-number">4.</span> <span class="toc-text">粘性定位</span></a></li></ol>	
         </div>
     
 </div>
